@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VR world</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script> 
+  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script> 
+</head>
+<body>
+<a-scene>
+  <a-entity environment="preset: forest; dressingAmount:700;dressing:trees;skyColor:skyblue;horizonColor:lightblue;groundTexture:walkernoise;groundYScale:2;groundColor:darkgreen;groundColor2:white;dressingColor:white;"></a-entity>
+<a-cylinder id="floor" position="0 0 0" radius="7.5" src="images/woodFloor.jpg" height="0.1"></a-cylinder>
+ <a-box id="box1" position="-3.127 1.473 4.907" rotation="0  0  0" scale="4  3  0.2 " src="images/woodWall.jpg"></a-box>
+ <a-box id="box2" position="3.127 1.473  4.907" rotation="0  0  0" scale="4  3  0.2 " src="images/woodWall.jpg"></a-box>
+  <a-box id="box3" position=" 0  1.473  -4.907" rotation="0  0  0" scale="10  3  0.2 " src="images/woodWall.jpg"></a-box>
+  <a-box id="box4" position="5.049  1.454  -0.008" rotation="0  -90  0" scale="10  3  0.2 "src="images/woodWall.jpg"></a-box>
+  <a-box id="box5" position="-5.049  1.454  -0.008" rotation="0  -90  0" scale="10  3  0.2 " src="images/woodWall.jpg"></a-box>
+
+  <a-cylinder id="triangle_front" segments-radial="3" position="0  3.874 4.907" rotation="-90  0  0" scale="5.774  0.2  1.8" src="images/woodWall.jpg"></a-cylinder>
+<a-cylinder id="triangle_back" segments-radial="3" position="0  3.874 -4.907" rotation="-90  0  0" scale="5.774  0.2  1.8" src="images/woodWall.jpg"></a-cylinder>
+    <a-box id="roof_right" position="2.580  4.328  0" rotation="28.433  90  0" scale="10.931 0.20  6.110" src="images/snow.jpg"></a-box>
+<a-box id="roof_left" position="-2.599  4.3321  -0.017" rotation="28.433  -90  0" scale="10.931 0.20  6.130" src="images/snow.jpg"></a-box>
+<a-box id="roof_inside" position="2.580  4.161 0" rotation="28.433  90  0" scale="10.931 0.020  6.110" src="images/woodFloor.jpg"></a-box>
+<a-box id="roof_insideLeft" position="-2.599  4.206  -0.017" rotation="28.433  -90  0" scale="10.931 0.020  6.130" src="images/woodFloor.jpg"></a-box>
+
+<a-plane id="art1" src="images/santa.jpg" scale="2 2 0.05" rotation="0 0 0" position="-0.162 1.934 -4.792"></a-plane> 
+<a-plane id="art2" src="images/elf.jpg" scale="2 2 0.05" rotation="0 0 0" position="-2.969 1.934 -4.792"></a-plane>
+<a-plane id="art3" src="images/mrsClaus.jpg" scale="2 2 0.05" rotation="0 0 0" position="2.583 1.934 -4.792"></a-plane>
+<a-plane id="nametag1" position="0 -0.4 0.6" scale="0.5 0.4 0.01" width="0.8" height=".25" colour="black" transparent="true" opacity="1"></a-plane>
+<a-entity text="value: Computerized Face, Image by Lukas from Pixabay; align: center" position="0.0 0.05" scale="1.122 1.455 1.273" shader="flat"></a-entity>
+</a-plane>
+</a-scene>
+  
+</body>
+</html>
